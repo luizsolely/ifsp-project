@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Express API backend project created for the web development assignment at IFSP",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node . --watch"
+  },
+  "author": "no",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
