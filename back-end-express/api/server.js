@@ -15,17 +15,18 @@ let apiKey = {
 
 app.get('/', async (req, res) => {
     try {
-        const response = await axios.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=" + apiKey.key);
+        const response = await axios.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=" + apiKey.key);
 
         apiArrayData = response.data.data.map(item => ({
             id: item.id,
-            rank: item.rank,
             name: item.name,
-            symbol: item.symbol
+            symbol: item.symbol,
+            price: item.quote.USD.price,
+            percent_change: item.quote.USD.percent_change_24h
         }));
 
-        // Retorna as 10 primeiras moedas
-        res.json(apiArrayData.sort((a, b) => a.rank - b.rank).slice(0, 10));
+        // Retorna as 06 primeiras moedas
+        res.json(apiArrayData.sort((a, b) => a.rank - b.rank).slice(0, 6));
 
     } catch (error) {
         console.error("Erro ao executar a requisição:", error.message);

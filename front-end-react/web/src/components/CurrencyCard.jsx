@@ -4,9 +4,10 @@ const CurrencyCard = ({props}) => {
   return (
     <div className='currency-card-container'>
         <p className='card-attribute'><span>ID:</span> {props.id}</p>
-        <p className='card-attribute'><span>RANK:</span> {props.rank}</p>
-        <p className='card-attribute'>{props.symbol}</p>
+        <p className='card-attribute'><span>{props.symbol}</span></p>
         <p className='card-attribute'>{props.name}</p>
+        <p className='card-attribute'><span>PRICE:</span> {props.price.toFixed(2)}</p>
+        <p className='card-attribute'><span>24h:</span> {props.percent_change.toFixed(2)}%</p>
     </div>
   )
 }

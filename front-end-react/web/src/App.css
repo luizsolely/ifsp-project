@@ -5,6 +5,7 @@ body {
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  overflow: hidden;
 
 }
 
@@ -15,6 +16,15 @@ span {
 
 p {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f7931a;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #main {
@@ -47,6 +57,7 @@ p {
   margin: 10px;
   border-radius: 30px;
   background-color: #1d1d1d;
+  transition: transform 0.2s ease-in-out;
   cursor: pointer;
 
 }
@@ -54,8 +65,6 @@ p {
 .currency-card-container:hover {
 
   transform: scale(1.03);
-  transition: ease-in-out;
-  transition-duration: 0.3s;
 
 }
 
@@ -65,7 +74,7 @@ p {
 
 }
 
-#project-info-title, #project-info-subtitle {
+#project-info-title, #project-info-subtitle, #project-title {
   text-align: center;
 }
 

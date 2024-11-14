@@ -26,6 +26,7 @@ function App() {
   return (
     <div id='main'>
       <div id='left-side'>
+        <h1 id='project-title'>CRYPTOCURRENCIES STATUS</h1>
         {data.length > 0 ? (
           data.map((currency) => (
             <CurrencyCard key={currency.id} props={currency} />
@@ -33,6 +34,8 @@ function App() {
         ) : (
           <p>Carregando...</p>
         )}
+        <p>Informações atualizadas a cada 30s.</p>
+        <p>API utilizada: <a href="https://coinmarketcap.com/api/documentation/v1/" target="_blank" >https://coinmarketcap.com/api/documentation/v1/</a></p>
       </div>
       <div id='right-side'>
         <ProjectInfo />
