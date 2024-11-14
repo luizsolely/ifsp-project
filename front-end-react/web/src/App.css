@@ -1,9 +1,86 @@
 body {
   
-  font-family: system-ui, sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 2;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+
+}
+
+span {
+  font-weight: bold;
+  color: #f7931a;
+}
+
+p {
+  text-align: center;
+}
+
+#main {
+
+  margin: 15px 15px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#left-side {
+  width: 50%;
+}
+
+#right-side {
+  width: 50%;
+  padding: 6px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #1d1d1d;
+}
+
+.currency-card-container {
+
+  width: 100%;
+  display: flex;
+  padding: 6px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #1d1d1d;
+  cursor: pointer;
+
+}
+
+.currency-card-container:hover {
+
+  transform: scale(1.03);
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+
+}
+
+.card-attribute {
+
+  padding-left: 10px;
+
+}
+
+#project-info-title, #project-info-subtitle {
+  text-align: center;
+}
+
+ul.integrants-list {
+  padding: 20px 50px;
+  list-style: none;
+  line-height: 2;
+  background-color: #11111152;
+  border-radius: 30px;
+}
+
+.integrant {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
