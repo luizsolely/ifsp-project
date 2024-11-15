@@ -27,6 +27,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.negative {
+  color: rgb(255, 85, 85);
+}
+
+.positive {
+  color: rgb(56, 255, 56);
+}
+
 #main {
 
   margin: 15px 15px;

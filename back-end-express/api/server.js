@@ -22,7 +22,8 @@ app.get('/', async (req, res) => {
             name: item.name,
             symbol: item.symbol,
             price: item.quote.USD.price,
-            percent_change: item.quote.USD.percent_change_24h
+            percent_change: item.quote.USD.percent_change_24h,
+            market_cap: item.quote.USD.market_cap
         }));
 
         // Retorna as 06 primeiras moedas
